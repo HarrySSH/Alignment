@@ -144,10 +144,25 @@ Initialize the class and calculate the alignment scores. (At the same time, the 
 		Align_global.compute_alignment_score()
 		Align_local.compute_alignment_score()
 		
-Shows the alignment scores:
+Show the alignment scores:
 
 		Align_global.get_alignment_score()
+		
+![alt text](https://user-images.githubusercontent.com/49840852/106100881-e75dc880-60f1-11eb-8c4b-87f5948714db.png)
+
 		Align_local.get_alignment_score()
+		
+![alt text](https://user-images.githubusercontent.com/49840852/106100882-e75dc880-60f1-11eb-87b9-a850f2d3a6a0.png)		
+		
+Show the alignment sequences:
+
+		Align_global.get_alignment_sequence()
+
+![alt text](https://user-images.githubusercontent.com/49840852/106100876-e5940500-60f1-11eb-9646-b7fa02fc4335.png)
+
+		Align_local.get_alignment_sequence()
+		
+![alt text](https://user-images.githubusercontent.com/49840852/106100880-e6c53200-60f1-11eb-93dc-df008b2746e8.png)
 	
 	
 
