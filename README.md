@@ -5,6 +5,7 @@ Implement alignment algorithms
 - [Background](#background)
 - [Usage](#usage)
 - [API](#api)
+- [Example](#example)
 
 ## Background
 In this assignment, I will implement two classical alignment algorithms and then evaluate each algorithm’s performance with a range of parameters. 
@@ -113,6 +114,42 @@ the trace_mtx of [2,3] is connected with [1.2], and also is linked to [2,4], [3,
 
     This function is packaged in other function. No need to use it.
     Compute the aligned sequences
+
+## Example
+
+In this turtorial, we will together initialize a global alignment class and a local alignment class, compute the alignment scores and alignment matrix.
+Go to the folder test, open a jupyter notebook. ( Or other editors...)
+
+* Initialization
+
+Load packages
+
+		import sys
+		import numpy as np
+		import pandas as pd
+		sys.path.append("..")
+		import align.algs as algs
+		import os
+
+dir1 is a fasta file, dir2 is the same fasta file but with a huge gap, dir 3 is the scoreing matrix
+
+		dir1 = 'Test_sequences/Sequence-1.fa'
+		dir2 = 'Test_sequences/Sequence-1-paired-GAP.fa'
+		dir3 = '../scoring_matrices/PAM250.mat'
+
+Initialize the class and calculate the alignment scores. (At the same time, the align_sequence is also computed.
+
+		Align_global = algs.NeedlemanWunsch(dir1,dir2,dir3,11,3)
+		Align_local  = algs.SmithWaterman(dir1,dir2,dir3,11,3)
+		Align_global.compute_alignment_score()
+		Align_local.compute_alignment_score()
+		
+Shows the alignment scores:
+
+		Align_global.get_alignment_score()
+		Align_local.get_alignment_score()
+	
+	
 
 
 
