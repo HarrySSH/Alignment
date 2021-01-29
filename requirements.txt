@@ -2,7 +2,7 @@ pytest>=3.0
 numpy>=1.11.2
 pandas
 fastaparser
-glob
+glob2
 multiprocessing
 fastaparser
 matplotlib
