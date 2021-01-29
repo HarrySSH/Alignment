@@ -3,7 +3,7 @@ numpy>=1.11.2
 pandas
 fastaparser
 glob2
-multiprocessing
+multiprocess
 fastaparser
 matplotlib
 statistics
