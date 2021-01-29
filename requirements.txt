@@ -1,0 +1,12 @@
+pytest>=3.0
+numpy>=1.11.2
+pandas
+fastaparser
+glob
+multiprocessing
+fastaparser
+matplotlib
+statistics
+sklearn
+seaborn
+warnings
