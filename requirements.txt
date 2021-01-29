@@ -9,4 +9,5 @@ matplotlib
 statistics
 sklearn
 seaborn
-warnings
+warn
+pytest-warnings
